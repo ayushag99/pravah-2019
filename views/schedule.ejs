@@ -1,0 +1,39 @@
+<%- include("./partials/html-header")%>
+<body class="schedule-page">
+  <%- include("./partials/site-header")%>
+  <div class="page-header" style="background: url(images/schedule-bg.jpeg) no-repeat;background-size: cover;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="entry-header">
+            <h2 class="entry-title">Register</h2>
+            <ul class="breadcrumbs flex align-items-center"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="schedule">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDL-tBD3MsKAiksSjSdCY_nCBc9eO1wlPoTd4WEoljikCMHR7FHl9fAqGtJudy-MzwUZ_Q-mInPrPz/pubhtml?gid=1553090326&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false"></iframe>
+  </div>
+  
+  
+
+  <style>
+      .schedule{
+          margin-left: 2%;
+          margin-right: 2%;
+          height:auto;
+          overflow: auto;
+      }
+      iframe{
+          margin:20px;
+          width:100vw;
+          height:800px;
+      }
+  </style>
+
+  <%- include("./partials/footer.ejs")%>
+  
+</body>

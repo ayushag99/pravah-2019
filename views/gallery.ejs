@@ -1,0 +1,137 @@
+<%- include("./partials/html-header")%>
+<body class="blog-page">
+    <%- include("./partials/site-header")%>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="entry-header">
+                        <h2 class="entry-title">Gallery</h2>
+
+                        
+                    </div><!-- entry-header -->
+                </div><!-- col-12 -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- page-header -->
+
+    <h1 class="tag">Pravah in pics...</h1>
+
+    <div style="height:100vh;width:95vw;margin:auto;margin-bottom:20px;" class="holder">
+
+        <div class="menu">
+            <ul class="days">
+                <li class="day">Day 1</li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="day1 ss" id="day1">
+              <img src="images/gallery/Day1/day1.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day2.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day3.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day4.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day5.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day6.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day7.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day8.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day9.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day10.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day11.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day12.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day13.jpeg" alt="" class="pic">
+              <img src="images/gallery/Day1/day14.jpeg" alt="" class="pic">
+            </div>
+
+                
+            <div class="day2 ss"></div>
+            <div class="day3 ss"></div>
+            <div class="day4 ss"></div>
+            <div class="day5 ss"></div>
+        </div>
+    </div>
+    <style>
+      .days{
+        list-style-type: none;
+        padding: 30px;
+        font-size:30px;
+      }
+      .day{
+        border:2px solid #2e2e2e;
+        border-radius: 50px;
+        padding-left:10px;
+      }
+      .day a{
+        text-decoration: none;
+        color:#fff;
+        width:100%;
+        height:100%;
+      }
+      .day:hover{
+        border-radius: 50px;
+        border:2px solid #fff;
+      }
+      .tag{
+        color:#2e2e2e;
+        font-weight: 400;
+        padding-left:10%;
+        padding-top:40px;
+        padding-bottom:40px;
+      }
+        .holder{
+            position:relative;
+
+        }
+        .menu{
+            position: absolute;
+            height:100vh;
+            top:0;
+            left:0;
+            width:20%;
+            background: #2e2e2e;
+        }
+        .slider{
+            position: absolute;
+            height:100vh;
+            top:0;
+            right:0;
+            width:80%;
+            background: #000;
+        }
+        .pic{
+            position:absolute;
+            max-width:100%;
+            max-height:100%;
+            image-orientation:0deg; 
+            display: none;
+        }
+        .ss:target{
+          display:block;
+        }
+        .day2,.day3,.day4,.day5{
+            display:none;
+        }
+
+        
+    </style>
+    
+    <script>
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("pic");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+    </style>
+
+<footer class="site-footer"> <div class="footer-cover-title flex justify-content-center align-items-center"> <h2>SKIT</h2> </div><div class="footer-content-wrapper"> <div class="container"> <div class="row"> <div class="col-12"> <div class="entry-title"> <a href="/">PRAVAH</a> </div><div class="entry-mail"> <a href="mailto:pravah@skit.ac.in">PRAVAH@SKIT.AC.IN</a> </div><div class="copyright-info"> Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </div><div class="footer-social"> <ul class="flex justify-content-center align-items-center"> <li><a href="https://www.facebook.com/pravah.skit/?ref=br_rs"><i class="fab fa-facebook-f"></i></a></li><li><a href="http://www.instagram.com/skitpravah/"><i class="fab fa-instagram"></i></a></li></ul> </div></div></div></div></div></footer></body>
+</html>

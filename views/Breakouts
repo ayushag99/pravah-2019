@@ -1,0 +1,167 @@
+            <!-- TODO:  Place the counter over here -->
+<div class="row flex flex-wrap justify-content-between">
+                <div class="d-col-n mt-5 mt-lg-0">
+                    <div class="counter-box">
+                        <div class="flex justify-content-center">
+                            <div class="start-counter" data-to="390" data-speed="2000"></div>
+                        </div>
+
+                        <h3 class="entry-title">Hours of Music</h3><!-- entry-title -->
+                    </div><!-- counter-box -->
+                </div><!-- d-col-n -->
+
+                <div class="d-col-n mt-5 mt-lg-0">
+                    <div class="counter-box">
+                        <div class="flex justify-content-center">
+                            <div class="start-counter" data-to="6" data-speed="2000"></div>
+                        </div>
+
+                        <h3 class="entry-title">Fun Days</h3><!-- entry-title -->
+                    </div><!-- counter-box -->
+                </div><!-- d-col-n -->
+
+                <div class="d-col-n mt-5 mt-lg-0">
+                    <div class="counter-box">
+                        <div class="flex justify-content-center">
+                            <div class="start-counter" data-to="120" data-speed="2000"></div>
+                            <div class="counter-k">K</div>
+                        </div>
+
+                        <h3 class="entry-title">Visitors</h3><!-- entry-title -->
+                    </div><!-- counter-box -->
+                </div><!-- d-col-n -->
+
+                <div class="d-col-n mt-5 mt-lg-0">
+                    <div class="counter-box">
+                        <div class="flex justify-content-center">
+                            <div class="start-counter" data-to="8" data-speed="2000"></div>
+                        </div>
+
+                        <h3 class="entry-title">Stages</h3><!-- entry-title -->
+                    </div><!-- counter-box -->
+                </div><!-- d-col-n -->
+
+                <div class="d-col-n mt-5 mt-lg-0">
+                    <div class="counter-box">
+                        <div class="flex justify-content-center">
+                            <div class="start-counter" data-to="325" data-speed="2000"></div>
+                            <div class="counter-k">K</div>
+                        </div>
+
+                        <h3 class="entry-title">Followers</h3><!-- entry-title -->
+                    </div><!-- counter-box -->
+                </div><!-- d-col-n -->
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="event-holder">
+          <div class="event">
+            <img src="./images/event-technical.svg" alt="" />
+            <h3>Technical Events</h3>
+            <ul>
+              <li>Code Marathon</li>
+              <li>Brain Mine</li>
+            </ul>
+          </div>
+          <div class="event">
+            <img src="./images/event-cultural.svg" alt="" />
+            <h3>Cultural Events</h3>
+          </div>
+          <div class="event">
+            <img src="./images/event-literary.svg" alt="" />
+            <h3>Non-Technical Events</h3>
+          </div>
+          <div class="event">
+            <img src="./images/event-nontech.svg" alt="" />
+            <h3>Literary Events</h3>
+          </div>
+        </div>
+        <style>
+          .event-holder {
+            height: 350px;
+            background: #fff;
+            box-shadow: 0 13px 50px 9px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 150px;
+            padding: 70px 30px;
+          }
+          .event {
+          }
+          .event img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 55%;
+            height: auto;
+            transition: all 0.3s ease-out;
+          }
+          .event h3 {
+            text-align: center;
+            transition: all 5s ease-out;
+            font-size: 25px;
+            margin-top: 1em;
+            color: #2e2e2e;
+            font-weight: 400;
+          }
+          .event ul {
+            display: none;
+            list-style-type: none;
+            color: #2e2e2e;
+            align-items: center;
+            opacity: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          .event ul li {
+            text-align: center;
+            font-size: 18px;
+          }
+          .event:hover {
+            animation: hovery 0.5s ease-out;
+            transform: scale(0.8, 0.8);
+          }
+          .event:hover img {
+            margin-top: -60px;
+          }
+          .event:hover ul {
+            animation: moveup 0.4s ease-out;
+            margin-top: 0px;
+            opacity: 1;
+            display: block;
+          }
+          @keyframes hovery {
+            0% {
+              transform: scale(1, 1);
+            }
+            30% {
+              transform: scale(1.2, 1.2);
+            }
+            100% {
+              transform: scale(0.8, 0.8);
+            }
+          }
+          @keyframes moveup {
+            0% {
+              margin-top: 50px;
+              opacity: 0;
+            }
+            100% {
+              margin-top: 0px;
+              opacity: 1;
+              display: block;
+            }
+          }
+        </style>

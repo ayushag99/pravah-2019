@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Robocross</h1>
+        <form id="pubg" action="/event/registration/robocross" method="post">
+            <label>
+                    <input
+                      type="text"
+                      name="team_name"
+                      required
+                    />
+                    <div class="label-text">
+                      Team Name
+                    </div></label
+                  >
+            <h1>Leader (Player-1) Information</h1>
+
+          <label>
+            <input
+              type="text"
+              name="player1_name"
+              required
+            />
+            <div class="label-text">
+              Name
+            </div></label
+          >
+          <label>
+            <input type="text" name="player1_email"  required />
+            <div class="label-text">Email</div></label
+          >
+          <label>
+            <label>
+              <input type="text" name="player1_mobile" required />
+              <div class="label-text">Contact Number</div></label
+            >
+          <label>
+            <input type="text" name="player1_college" required />
+            <div class="label-text">College</div></label
+          >
+          
+          
+            
+          <label>
+            <input
+              type="number"
+              name="player1_branch"
+              id="participant"
+              required
+            />
+            <div class="label-text">No. Of Paticipaants: (1 to 4)</div></label
+          >
+
+
+                <div id="player2">
+                        <h1>Player 2</h1>
+                    
+                        <label >
+                                <input type="text" name="player2_name" id="player2a" required />
+                                <div class="label-text">Player 2 Name</div>
+                        </label>
+                        <label >
+                                <input type="text" name="player2_email" id="player2b" required />
+                                <div class="label-text">Player 2 Email</div>
+                        </label>
+                        <label >
+                                <input type="text" name="player2_contact" id="player2c" required />
+                                <div class="label-text">Player 2 Contact</div>
+                        </label>
+                </div>
+                <div id="player3">
+                        <h1>Player 3</h1>
+                        <label >
+                                <input type="text" name="player3_name" id="player3a" required />
+                                <div class="label-text">Player 3 Name</div>
+                        </label>
+                        <label >
+                                <input type="text" name="player3_email" id="player3b" required />
+                                <div class="label-text">Player 3 Email</div>
+                        </label>
+                        <label >
+                                <input type="text" name="player3_contact" id="player3c" required />
+                                <div class="label-text">Player 3 Contact</div>
+                        </label>
+                </div>
+                <div id="player4">
+                        <h1>Player 4</h1>
+                        <label >
+                                <input type="text" name="player4_name" id="player4a" required />
+                                <div class="label-text">Player 4 Name</div>
+                        </label>
+                        <label >
+                                <input type="text" name="player4_email" id="player4b" required />
+                                <div class="label-text">Player 4 Email</div>
+                        </label>
+                        <label >
+                                <input type="text" name="player4_contact" id="player4c" required />
+                                <div class="label-text">Player 4 Contact</div>
+                        </label>
+                </div>
+          
+                  
+                    
+                    
+                    
+                    
+                    
+                  
+          
+          
+
+          
+            <h1>
+              Paytm Information
+            </h1>
+            <p style="color:maroon">Please make a payment of Rs. <span id="amount">200</span> on PayTM Number: 9470049920(Deepak Kumar)</p>
+            <p><span style="color:red"> NOTE:</span> Please take the screeshot of payment receipt, as it may be used to verify payment in case of future discrepancy.</p>
+            <p><span style="color:red"> NOTE:</span> If found to submit the form without successfull payment, your entry will be straight away rejected.</p>
+
+          <label>
+            <input
+              type="number"
+              name="paytm_number"
+              required
+            />
+            <div class="label-text">Paytm Number</div></label>
+          <label>
+            <input
+              type="text"
+              name="paytm_name"
+              required
+            />
+            <div class="label-text">Paytm Account Holder Name</div></label>
+          
+          <label>
+            <input
+              type="text"
+              name="paytm_transid"
+              required
+            />
+            <div class="label-text">Paytm Transacion Id.</div></label>
+
+            <script>
+                    document.getElementById("participant").addEventListener("input",(e)=>{
+                      if(parseInt(e.target.value) == 1){
+                          
+                        document.getElementById("player2a").value="NA";
+                        document.getElementById("player3a").value="NA";
+                        document.getElementById("player4a").value="NA";
+                        document.getElementById("player2b").value="NA";
+                        document.getElementById("player3b").value="NA";
+                        document.getElementById("player4b").value="NA";
+                        document.getElementById("player2c").value="NA";
+                        document.getElementById("player3c").value="NA";
+                        document.getElementById("player4c").value="NA";
+                        document.getElementById("player2").style.display="none";
+                        document.getElementById("player3").style.display="none";
+                        document.getElementById("player4").style.display="none";
+                        
+
+                      }
+                      else if(parseInt(e.target.value) == 2){
+                          document.getElementById("player2a").value="";
+                          document.getElementById("player3a").value="NA";
+                          document.getElementById("player4a").value="NA";
+                          document.getElementById("player2b").value="";
+                          document.getElementById("player3b").value="NA";
+                          document.getElementById("player4b").value="NA";
+                          document.getElementById("player2c").value="";
+                          document.getElementById("player3c").value="NA";
+                          document.getElementById("player4c").value="NA";
+                          document.getElementById("player2").style.display="block";
+                        document.getElementById("player3").style.display="none";
+                        document.getElementById("player4").style.display="none";
+                      }
+                      else if(parseInt(e.target.value) == 3){
+                          document.getElementById("player2a").value="";
+                          document.getElementById("player3a").value="";
+                          document.getElementById("player4a").value="NA";
+                          document.getElementById("player2b").value="";
+                          document.getElementById("player3b").value="";
+                          document.getElementById("player4b").value="NA";
+                          document.getElementById("player2c").value="";
+                          document.getElementById("player3c").value="";
+                          document.getElementById("player4c").value="NA";
+                          document.getElementById("player2").style.display="block";
+                        document.getElementById("player3").style.display="block";
+                        document.getElementById("player4").style.display="none";
+                          
+                      }
+                      else if(parseInt(e.target.value) == 4){
+                          document.getElementById("player2a").value="";
+                          document.getElementById("player3a").value="";
+                          document.getElementById("player4a").value="";
+                          document.getElementById("player2b").value="";
+                          document.getElementById("player3b").value="";
+                          document.getElementById("player4b").value="";
+                          document.getElementById("player2c").value="";
+                          document.getElementById("player3c").value="";
+                          document.getElementById("player4c").value="";
+                          document.getElementById("player2").style.display="block";
+                        document.getElementById("player3").style.display="block";
+                        document.getElementById("player4").style.display="block";
+                          
+                      }else{
+                          alert("Invalid option: Only 1 to 4 players are allowed")
+                          e.target.value=""
+                      }
+                    })
+                </script>
+          
+          
+          <button>Submit</button>
+        </form>
+
+    </div>
+
+
+    <style>
+      /* HERE: FORM */
+    form {
+      text-align: center;
+      font-family: "Open Sans", Helvetica;
+    }
+    label {
+      display: block;
+      letter-spacing: 4px;
+      padding-top: 30px;
+      text-align: center;
+    }
+    label .label-text {
+      color: #9b9b9b;
+      cursor: text;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      -moz-transform: translateY(-34px);
+      -ms-transform: translateY(-34px);
+      -webkit-transform: translateY(-34px);
+      transform: translateY(-34px);
+      transition: all 0.3s;
+    }
+    label input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid #4a4a4a;
+      color: #2e2e2e;
+      font-size: 36px;
+      letter-spacing: -1px;
+      outline: 0;
+      padding: 5px 20px;
+      text-align: center;
+      transition: all 0.3s;
+      width: 200px;
+    }
+    label input:focus {
+      max-width: 100%;
+      width: 400px;
+    }
+    label input:focus + .label-text {
+      color: #2e2e2e;
+      font-size: 13px;
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    label input:valid + .label-text {
+      font-size: 13px;
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    button {
+      background-color: #333333;
+      border: 2px solid white;
+      border-radius: 27px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      transition: all 200ms;
+    }
+    button:hover,
+    button:focus {
+      background-color: white;
+      color: #333333;
+      outline: 0;
+    }
+    </style>
+</body>
+</html>

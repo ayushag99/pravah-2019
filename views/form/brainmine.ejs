@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+            <form id="buddhi" action="/event/registration/brainmine" method="post">
+                <h1>Member 1</h1>
+
+              <label>
+                <input
+                  type="text"
+                  name="player1_name"
+                  required
+                />
+                <div class="label-text">
+                  Name
+                </div></label
+              >
+              <label>
+                <input type="text" name="player1_email" required />
+                <div class="label-text">Email</div></label
+              >
+              <label>
+                  <input type="text" name="player1_mobile" required />
+                  <div class="label-text">Contact Number</div></label
+                >
+              <label>
+                <input
+                  type="text"
+                  name="player1_branch"
+                  required
+                />
+                <div class="label-text">Branch</div></label
+              >
+              <label>
+                <input
+                  type="number"
+                  name="player1_year"
+                  required
+                />
+                <div class="label-text">Year</div></label>
+                <h1>Member 2</h1>
+
+              <label>
+                <input
+                  type="text"
+                  name="player2_name"
+                  required
+                />
+                <div class="label-text">
+                  Name
+                </div></label
+              >
+              <label>
+                <input type="text" name="player2_email" required />
+                <div class="label-text">Email</div></label
+              >
+              <label>
+                  <input type="text" name="player2_mobile" required />
+                  <div class="label-text">Contact Number</div></label
+                >
+              <label>
+                <input
+                  type="text"
+                  name="player2_branch"
+                  required
+                />
+                <div class="label-text">Branch</div></label
+              >
+              <label>
+                <input
+                  type="number"
+                  name="player2_year"
+                  required
+                />
+                <div class="label-text">Year</div></label>
+                <h1>
+                  Paytm Information
+                </h1>
+                <p>Please make a payment of Rs. 40 on PayTM Number: 9413731541</p>
+
+              <label>
+                <input
+                  type="number"
+                  name="paytm_number"
+                  required
+                />
+                <div class="label-text">Paytm Number</div></label>
+              <label>
+                <input
+                  type="text"
+                  name="paytm_name"
+                  required
+                />
+                <div class="label-text">Paytm Account Holder Name</div></label>
+              
+              <label>
+                <input
+                  type="text"
+                  name="paytm_transid"
+                  required
+                />
+                <div class="label-text">Paytm Trans. ID (optional)</div></label>
+              
+              
+              <button>Submit</button>
+            </form>
+
+    </div>
+
+
+    <style>
+      /* HERE: FORM */
+    form {
+      text-align: center;
+      font-family: "Open Sans", Helvetica;
+    }
+    form h2{
+      color:#2e2e2e;
+    }
+    label {
+      display: block;
+      letter-spacing: 4px;
+      padding-top: 30px;
+      text-align: center;
+    }
+    label .label-text {
+      color: #9b9b9b;
+      cursor: text;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      -moz-transform: translateY(-34px);
+      -ms-transform: translateY(-34px);
+      -webkit-transform: translateY(-34px);
+      transform: translateY(-34px);
+      transition: all 0.3s;
+    }
+    label input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid #4a4a4a;
+      color: #2e2e2e;
+      font-size: 36px;
+      letter-spacing: -1px;
+      outline: 0;
+      padding: 5px 20px;
+      text-align: center;
+      transition: all 0.3s;
+      width: 200px;
+    }
+    label input:focus {
+      max-width: 100%;
+      width: 400px;
+    }
+    label input:focus + .label-text {
+      color: #2e2e2e;
+      font-size: 13px;
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    label input:valid + .label-text {
+      font-size: 13px;
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    button {
+      background-color: #333333;
+      border: 2px solid white;
+      border-radius: 27px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      transition: all 200ms;
+    }
+    button:hover,
+    button:focus {
+      background-color: white;
+      color: #333333;
+      outline: 0;
+    }
+    </style>
+</body>
+</html>

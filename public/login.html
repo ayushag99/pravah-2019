@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Admin Panel</title>
+
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            border:0;
+            font-size: 1.2rem;
+            font-family: Helvetica, sans-serif;
+        }
+        *:focus{
+            outline: none;
+        }
+        body{
+            width:100vw;
+            height: 100vh;
+            position: relative;
+            box-sizing: border-box;
+            background: #DAE0E2;
+        }
+        .container{
+            position:absolute;
+            background: #A4B0BD;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            box-shadow: 0 13px 50px 9px rgba(0, 0, 0, 0.1);
+            padding: 60px;
+            width:30%;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+
+        }
+        label{
+            padding: 10px;
+        }
+        input{
+            margin-bottom: 30px;
+            border: 1px solid #2e2e2e;
+            padding: 12px;
+            background: #DAE0E2;
+        }
+        button{
+            background: #3498DB;
+            padding:5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+<div class="container">
+    <form action="./login" method="post">
+        <label for="">User Id</label>
+        <input type="text" name="id" id="" placeholder="id..." required> 
+        <label for="">Password</label>
+        <input type="password" name="password" id="password" placeholder="password..." required>
+        <!-- <button type="button" style="font-size:10px;margin-top:-15px;margin-bottom: 15px;">Show Password</button> -->
+        <button type="submit">Login</button>
+    </form>
+</div>
+    
+    
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<%- include("./partials/html-header")%>
+<body class="contact-page" oncut="return false" oncopy="return false">
+  <%- include("./partials/site-header")%>
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="entry-header">
+            <h2 class="entry-title">Sponsor</h2>
+            <ul class="breadcrumbs flex align-items-center"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="main-content">
+      <div class="entry-header" style="padding-top: 50px;">
+        <div class="entry-title"><h2>Clubbing Partner</h2></div>
+        <div class="logo-container-main">
+          
+          <img src="./images/sponsor/XSS.jpg" alt="" />
+        </div>
+        <div class="entry-title"><h2>Food Partner</h2></div>
+        <div class="logo-container-main">
+          
+          <img src="./images/sponsor/Vinnie.jpg" alt="" />
+        </div>
+
+        <div class="entry-title"><h2>Beverage Partner</h2></div>
+        <div class="logo-container-main">
+          
+          <img src="./images/sponsor/Howzat.jpg" alt="" />
+        </div>
+        <div class="entry-title"><h2>Style Partner</h2></div>
+        <div class="logo-container-main">
+          
+          <img src="./images/sponsor/Tattoo Baba.jpg" alt="" />
+        </div>
+
+        <div class="entry-title"><h2>Our Sponsors</h2></div>
+        <div class="logo-container-main">
+          <% for(var i=0; i < sponsor.SponsorMain.length; i++){%>
+          <img src="./images/sponsor/<%=sponsor.SponsorMain[i]%>.jpg" alt="" />
+          <%}%>
+        </div>
+        <div class="entry-title"><h2>Events Sponsors</h2></div>
+        <div class="logo-container">
+          <% for(var i=0; i < sponsor.SponsorSecond.length; i++){%>
+          <img src="./images/sponsor/<%=sponsor.SponsorSecond[i]%>.jpg" alt="" />
+          <%}%>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .entry-title h2 {
+      text-align: center;
+    }
+    .logo-container,
+    .logo-container-main {
+      padding: 50px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .logo-container img {
+      width: 180px;
+      height: auto;
+      margin: 12px;
+    }
+    .logo-container-main img {
+      width: 220px;
+      height: auto;
+      margin:15px;
+    }
+  </style>
+  <%- include("./partials/footer.ejs")%>
+</body>

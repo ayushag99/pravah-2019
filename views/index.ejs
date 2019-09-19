@@ -1,0 +1,482 @@
+<%- include("./partials/html-header")%>
+<body>
+  <%- include("./partials/site-header")%>
+  <div class="hero-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-10" style="margin:auto;">
+          <div class="entry-header">
+            <img src="./images/pravahlogo small.png" alt="" />
+          </div>
+          
+
+              <style>
+                @font-face {
+      font-family: "mountains";
+    src: url(fonts/beyond_the_mountains.ttf);
+    src: url(fonts/beyond_the_mountains.otf);
+    font-weight: 400;
+}
+              </style>
+            <h3 style="text-align:center;color:#2e2e2e;font-size:100px; padding-top:40px;   font-family: mountains;
+            ">is live</h3>
+              
+          </div>
+          <div class="countdown">
+            <div class="countdown-holder">
+              <div class="dday"></div>
+              <label>Days</label>
+            </div>
+            <div class="countdown-holder">
+              <div class="dhour"></div>
+              <label>Hours</label>
+            </div>
+            <div class="countdown-holder">
+              <div class="dmin"></div>
+              <label>Minutes</label>
+            </div>
+            <div class="countdown-holder">
+              <div class="dsec"></div>
+              <label>Seconds</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 ">
+          <div class="entry-footer">
+            <a href="/event/registration#thirak" class="btn">Register</a>
+            <a href="/events" class="btn current">See Events</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="lineup-artists-headline">
+            <div class="entry-title">
+              <h2>Celebrity Night</h2>
+              <p>LIVE IN CONCERT</p>
+            </div>
+            <div class="lineup-artists">
+                <div class="lineup-artists-wrap flex flex-wrap">
+                    <figure class="featured-image">
+                        <a href="#">
+                            <img src="images/ravindra-upadhyay.jpg" alt="" />
+                        </a>
+                    </figure>
+                    <div class="lineup-artists-description">
+                        <div
+                            class="lineup-artists-description-container"
+                            id="slidein"
+                        >
+                            <div class="entry-title">Ravindra Upadhyay</div>
+                            <div class="entry-content">
+                                <p>
+                                    Ravindra Upadhyay, the lawyer from Jaipur, made his way
+                                    beating over lakhs of participants from all over India
+                                    after the nail-biting finale of the Samsung-[v] Super
+                                    Singer Contest selected and judged by worlds top
+                                    musicians and singers like A.R REHMAN, ADNAN SAMI,
+                                    HIMESH RESHAMIYA.
+                                </p>
+                            </div>
+                            <div class="box-link">
+                                <a href=""><img src="images/box.jpg" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lineup-artists-wrap flex flex-wrap">
+                                <div class="lineup-artists-description">
+                                    <figure class="featured-image d-md-none" style="z-index: 5;">
+                                        <a href="#"> <img src="images/FullSizeRender.jpg" alt="" > </a>
+                                    </figure><!-- featured-image -->
+
+                                    <div class="lineup-artists-description-container">
+                                        <div class="entry-title">
+                                            Anubhav the Band
+                                        </div><!-- entry-title -->
+
+                                        <div class="entry-content">
+                                            <p>Anubhav The Band, will be performing live at SKIT Jaipur on 28 Feb 2019.</p>
+                                        </div><!-- entry-content -->
+
+                                        <div class="box-link">
+                                            <a href="#"><img src="images/box.jpg" alt=""></a>
+                                        </div><!-- box-link -->
+                                    </div><!-- lineup-artists-description-container -->
+                                </div><!-- lineup-artists-description -->
+
+                                <figure class="featured-image d-none d-md-block" style="z-index: 5;">
+                                    <a href="#"> <img src="images/FullSizeRenderlarge.jpg" alt=""> </a>
+                                </figure><!-- featured-image -->
+                            </div><!-- lineup-artists-wrap -->
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      element = document.getElementById("slidein").getBoundingClientRect();
+      window.addEventListener("scroll", () => {
+        console.log(element.offsetTop);
+        console.log(window.pageYOffset);
+      });
+    </script>
+    <div class="homepage-next-events">
+      <div class="container">
+        <div class="event-holder">
+          <div class="pair">
+            <div class="event">
+              <img src="./images/event-technical.svg" alt="" />
+              <h3>Technical Events</h3>
+              <ul>
+                <li>Brain Mine</li>
+                <li>MAD for CAd</li>
+                <li>PUBG</li>
+                <li>Automatpr'19</li>
+              </ul>
+            </div>
+            <div class="event">
+              <img src="./images/event-cultural.svg" alt="" />
+              <h3>Cultural Events</h3>
+              <ul>
+                <li>Thirak</li>
+                <li>Sur</li>
+                <li>Rang</li>
+                <li>Kavyanjali</li>
+                <li>Rawaz</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pair">
+            <div class="event">
+              <img src="./images/event-literary.svg" alt="" />
+              <h3>Non-Technical Events</h3>
+              <ul>
+                <li>Auto Expo</li>
+                <li>Photography</li>
+                <li>Fantsy IPL</li>
+              </ul>
+            </div>
+            <div class="event">
+              <img src="./images/event-nontech.svg" alt="" />
+              <h3>Literary Events</h3>
+              <ul>
+                <li>Kathakar</li>
+                <li>Game of Series</li>
+                <li>Nukkad Natak</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <style>
+          .event-holder {
+            background: #fff;
+            -webkit-box-shadow: 0 13px 50px 9px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 13px 50px 9px rgba(0, 0, 0, 0.1);
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: 150px;
+          }
+          .event-holder .pair {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 350px;
+            padding: 70px 30px;
+          }
+          .pair:nth-child(2) {
+            padding-left: 0;
+          }
+          .event {
+            cursor: pointer;
+          }
+          .event img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 55%;
+            height: auto;
+            -webkit-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+          }
+          .event h3 {
+            text-align: center;
+            -webkit-transition: all 5s ease-out;
+            -o-transition: all 5s ease-out;
+            transition: all 5s ease-out;
+            font-size: 25px;
+            margin-top: 1em;
+            color: #2e2e2e;
+            font-weight: 400;
+          }
+          .event ul {
+            display: none;
+            list-style-type: none;
+            color: #2e2e2e;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            opacity: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+          .event ul li {
+            text-align: center;
+            font-size: 18px;
+          }
+          .event:hover {
+            -webkit-animation: hovery 0.5s ease-out;
+            animation: hovery 0.5s ease-out;
+            -webkit-transform: scale(0.8, 0.8);
+            -ms-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+          }
+          .event:hover img {
+            margin-top: -60px;
+          }
+          .event:hover ul {
+            -webkit-animation: moveup 0.4s ease-out;
+            animation: moveup 0.4s ease-out;
+            margin-top: 0px;
+            opacity: 1;
+            display: block;
+          }
+          @-webkit-keyframes hovery {
+            0% {
+              -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+            }
+            30% {
+              -webkit-transform: scale(1.2, 1.2);
+              transform: scale(1.2, 1.2);
+            }
+            100% {
+              -webkit-transform: scale(0.8, 0.8);
+              transform: scale(0.8, 0.8);
+            }
+          }
+          @keyframes hovery {
+            0% {
+              -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+            }
+            30% {
+              -webkit-transform: scale(1.2, 1.2);
+              transform: scale(1.2, 1.2);
+            }
+            100% {
+              -webkit-transform: scale(0.8, 0.8);
+              transform: scale(0.8, 0.8);
+            }
+          }
+          @-webkit-keyframes moveup {
+            0% {
+              margin-top: 50px;
+              opacity: 0;
+            }
+            100% {
+              margin-top: 0px;
+              opacity: 1;
+              display: block;
+            }
+          }
+          @keyframes moveup {
+            0% {
+              margin-top: 50px;
+              opacity: 0;
+            }
+            100% {
+              margin-top: 0px;
+              opacity: 1;
+              display: block;
+            }
+          }
+          @media (max-width: 1000px) {
+            .event-holder {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+              flex-direction: column;
+            }
+            .event-holder .pair {
+              padding: 30px 30px;
+            }
+          }
+          @media (max-width: 500px) {
+            .event-holder .pair {
+              padding: 10px 10px;
+              margin: 0;
+              height: 320px;
+            }
+          }
+        </style>
+        <div class="row">
+          <div class="col-12">
+            <div class="entry-title"><h2>Past Year Highlights</h2></div>
+          </div>
+        </div>
+      </div>
+      <div class="next-event-slider-wrap">
+        <div class="swiper-container next-event-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="next-event-content">
+                <figure class="featured-image">
+                  <img src="images/photos small/small 1.jpg" alt="" />
+                  <a
+                    href="#"
+                    class="entry-content flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>DJ Night</h3>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="next-event-content">
+                <figure class="featured-image">
+                  <img src="images/photos small/small 4.jpg" alt="" />
+                  <a
+                    href="#"
+                    class="entry-content flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>Auto Expo</h3>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="next-event-content">
+                <figure class="featured-image">
+                  <img src="images/photos small/small 5.jpg" alt="" />
+                  <a
+                    href="#"
+                    class="entry-content flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>Celebrity Night</h3>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="next-event-content">
+                <figure class="featured-image">
+                  <img src="images/photos small/small 14.jpg" alt="" />
+                  <a
+                    href="#"
+                    class="entry-content flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>Thirak</h3>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="next-event-content">
+                <figure class="featured-image">
+                  <img src="images/photos small/small 15.jpg" alt="" />
+                  <a
+                    href="#"
+                    class="entry-content flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>Thirak</h3>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="next-event-content">
+                <figure class="featured-image">
+                  <img src="images/photos small/small 18.jpg" alt="" />
+                  <a
+                    href="#"
+                    class="entry-content flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>Celebrity Night</h3>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="next-event-content">
+                <figure class="featured-image">
+                  <img src="images/photos small/small 19.jpg" alt="" />
+                  <a
+                    href="#"
+                    class="entry-content flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>Celebrity Night</h3>
+                  </a>
+                </figure>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="next-event-content">
+                <figure class="featured-image">
+                  <img src="images/photos small/small 20.jpg" alt="" />
+                  <a
+                    href="#"
+                    class="entry-content flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>RAWAJ</h3>
+                  </a>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="images/button.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const eventDate = new Date("25 feb 2019 9:00 AM").getTime();
+    setInterval(() => {
+      let distance = eventDate - Date.now();
+      document.querySelector(".dday").textContent = Math.abs(Math.floor(
+        distance / (1000 * 60 * 60 * 24)
+      )+1);
+      document.querySelector(".dhour").textContent = Math.abs(Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      )+1);
+      document.querySelector(".dmin").textContent = Math.abs(Math.floor(
+        (distance % (1000 * 60 * 60)) / (1000 * 60)
+      )+1);
+      document.querySelector(".dsec").textContent = Math.abs(Math.floor(
+        (distance % (1000 * 60)) / 1000
+      )+1);
+    }, 1000);</script
+  ><%- include("./partials/footer.ejs")%>
+</body>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <form id="cubg" action="/event/registration/cubg" method="post">
+
+            <label>
+                <input
+                  type="number"
+                  name="participant"
+                  id="participant"
+                  required
+                />
+                <div class="label-text">No. Of Paticipants: (1 or 2)</div></label
+              >
+            <label>
+                <input
+                  type="text"
+                  name="college"
+                  id="participant"
+                  required
+                />
+                <div class="label-text">College</div></label
+              >
+
+            <h1>Leader (Player-1) Information</h1>
+
+          <label>
+            <input
+              type="text"
+              name="player1_name"
+              required
+            />
+            <div class="label-text">
+              Name
+            </div></label
+          >
+          <label>
+            <input type="text" name="player1_email"  required />
+            <div class="label-text">Email</div></label
+          >
+          <label>
+            <label>
+              <input type="text" name="player1_mobile" required />
+              <div class="label-text">Contact Number</div></label
+            >
+          
+            <label>
+              <input type="text" name="player1_branch" required />
+              <div class="label-text">Branch</div></label
+            >
+          
+            <label>
+              <input type="text" name="player1_year" required />
+              <div class="label-text">Year</div></label
+            >
+          
+          
+            <p>Members are allowed in solo or duo.</p>
+          
+            
+          
+
+          
+              <div id="extra">
+                  <h1>Player 2</h1>
+                    
+                    <label >
+                            <input type="text" name="player2_name" id="player2a" required />
+                            <div class="label-text">Player 2 Name</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player2_mobile" id="player2b" required />
+                            <div class="label-text">Player 2 Contact</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player2_email" id="player2c" required />
+                            <div class="label-text">Player 2 Email</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player2_branch" id="player2d" required />
+                            <div class="label-text">Player 2 Branch</div>
+                    </label>
+                    
+
+              </div>
+                  
+          
+          
+
+          
+            <h1>
+              Paytm Information
+            </h1>
+            <p style="color:maroon">Please make a payment of Rs. <span id="amount"></span> on PayTM Number: 8559990972(Yash Kumawat)</p>
+            <p><span style="color:red"> NOTE:</span> Please take the screenshot of payment receipt, as it may be used to verify payment in case of future discrepancy.</p>
+            <p><span style="color:red"> NOTE:</span> If found to submit the form without successfull payment, your entry will be straight away rejected.</p>
+
+          <label>
+            <input
+              type="number"
+              name="paytm_number"
+              required
+            />
+            <div class="label-text">Paytm Number</div></label>
+          <label>
+            <input
+              type="text"
+              name="paytm_name"
+              required
+            />
+            <div class="label-text">Paytm Account Holder Name</div></label>
+          
+          <label>
+            <input
+              type="text"
+              name="paytm_transid"
+              required
+            />
+            <div class="label-text">Paytm Transacion Id.</div></label>
+
+            <script>
+                    document.getElementById("participant").addEventListener("input",(e)=>{
+                      if(parseInt(e.target.value) == 1){
+                          
+                        document.getElementById("extra").style.display="none";
+                        document.getElementById("player2a").value="NA";
+                        
+                        document.getElementById("player2b").value="NA";
+                        
+                        document.getElementById("player2c").value="NA";
+                        
+                        document.getElementById("player2d").value="NA";
+                        
+                        document.getElementById("amount").textContent="30";
+
+                      }
+                      else if(parseInt(e.target.value) == 2){
+                          document.getElementById("extra").style.display="block";
+                          document.getElementById("player2a").value="";
+                          document.getElementById("player2b").value="";
+                          document.getElementById("player2c").value="";
+                          document.getElementById("amount").textContent="60";
+                      }else{
+                          alert("Invalid option: Only 1 or 2 players are allowed")
+                          e.target.value=""
+                      }
+                    })
+                </script>
+          
+          
+          <button>Submit</button>
+        </form>
+
+    </div>
+
+
+    <style>
+      /* HERE: FORM */
+    form {
+      text-align: center;
+      font-family: "Open Sans", Helvetica;
+    }
+    label {
+      display: block;
+      letter-spacing: 4px;
+      padding-top: 30px;
+      text-align: center;
+    }
+    label .label-text {
+      color: #9b9b9b;
+      cursor: text;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      -moz-transform: translateY(-34px);
+      -ms-transform: translateY(-34px);
+      -webkit-transform: translateY(-34px);
+      transform: translateY(-34px);
+      transition: all 0.3s;
+    }
+    label input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid #4a4a4a;
+      color: #2e2e2e;
+      font-size: 36px;
+      letter-spacing: -1px;
+      outline: 0;
+      padding: 5px 20px;
+      text-align: center;
+      transition: all 0.3s;
+      width: 200px;
+    }
+    label input:focus {
+      max-width: 100%;
+      width: 400px;
+    }
+    label input:focus + .label-text {
+      color: #2e2e2e;
+      font-size: 13px;
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    label input:valid + .label-text {
+      font-size: 13px;
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    button {
+      background-color: #333333;
+      border: 2px solid white;
+      border-radius: 27px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      transition: all 200ms;
+    }
+    button:hover,
+    button:focus {
+      background-color: white;
+      color: #333333;
+      outline: 0;
+    }
+    </style>
+</body>
+</html>

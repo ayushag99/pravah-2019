@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <form id="admadshow" action="/event/registration/admadshow" method="post">
+            <h1>Leader (Participant-1) Information</h1>
+
+          <label>
+            <input
+              type="text"
+              name="player1_name"
+              required
+            />
+            <div class="label-text">
+              Name
+            </div></label
+          >
+          <label>
+            <input type="text" name="player1_email"  required />
+            <div class="label-text">Email</div></label
+          >
+          <label>
+            <label>
+              <input type="text" name="player1_mobile" required />
+              <div class="label-text">Contact Number</div></label
+            >
+          <label>
+            <input type="text" name="player1_branch" required />
+            <div class="label-text">Branch</div></label
+          >
+          <label>
+            <input type="text" name="player1_college" required />
+            <div class="label-text">College</div></label
+          >
+          
+            
+          
+            
+          <label>
+            <input
+              type="number"
+              name="player1_branch"
+              id="participant"
+              required
+            />
+            <div class="label-text">No. Of Paticipaants: (3, 4 or 5)</div></label
+          >
+
+          
+                  <h1>Participant 2</h1>
+                    
+                    <label >
+                            <input type="text" name="player2_name" id="player2a" required />
+                            <div class="label-text">Name</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player2_mobile" id="player2b" required />
+                            <div class="label-text">Contact</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player2_email" id="player2c" required />
+                            <div class="label-text">Email</div>
+                    </label>
+                    <h1>Participant 3</h1>
+                    <label >
+                            <input type="text" name="player3_name" id="player3a" required />
+                            <div class="label-text">Name</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player3_mobile" id="player3b" required />
+                            <div class="label-text">Contact</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player3_email" id="player3c" required />
+                            <div class="label-text">Email</div>
+                    </label>
+                    <div id="extra1">
+                    <h1>Participant 4</h1>
+                    <label >
+                            <input type="text" name="player4_name" id="player4a" required />
+                            <div class="label-text">Name</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player4_mobile" id="player4b" required />
+                            <div class="label-text">Contact</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player4_email" id="player4c" required />
+                            <div class="label-text">Email</div>
+                    </label>
+                    </div>
+                    <div id="extra2">
+
+                    <h1>Participant 5</h1>
+                    <label >
+                            <input type="text" name="player5_name" id="player5a" required />
+                            <div class="label-text">Name</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player5_mobile" id="player5b" required />
+                            <div class="label-text">Contact</div>
+                    </label>
+                    <label >
+                            <input type="text" name="player5_email" id="player5c" required />
+                            <div class="label-text">Email</div>
+                    </label>
+
+              </div>
+                  
+          
+          
+
+          
+
+            <script>
+                    document.getElementById("participant").addEventListener("input",(e)=>{
+                      if(parseInt(e.target.value) == 3){
+                          
+                        document.getElementById("extra1").style.display="none";
+                        document.getElementById("extra2").style.display="none";
+                        document.getElementById("player4a").value="NA";
+                        document.getElementById("player5a").value="NA";
+                        document.getElementById("player4b").value="NA";
+                        document.getElementById("player5b").value="NA";
+                        document.getElementById("player4c").value="NA";
+                        document.getElementById("player5c").value="NA";
+
+                      }
+                      else if(parseInt(e.target.value) == 4){
+                          document.getElementById("extra1").style.display="block";
+                          document.getElementById("extra2").style.display="none";
+                          document.getElementById("player4a").value="";
+                          document.getElementById("player4b").value="";
+                          document.getElementById("player4c").value="";
+                          document.getElementById("player5a").value="NA";
+                          document.getElementById("player5b").value="NA";
+                          document.getElementById("player5c").value="NA";
+                      }
+                      else if(parseInt(e.target.value) == 5){
+                          document.getElementById("extra1").style.display="block";
+                          document.getElementById("extra2").style.display="block";
+                          document.getElementById("player4a").value="";
+                          document.getElementById("player4b").value="";
+                          document.getElementById("player4c").value="";
+                          document.getElementById("player5a").value="";
+                          document.getElementById("player5b").value="";
+                          document.getElementById("player5c").value="";
+                      }else{
+                          alert("Invalid option: Only 3, 4 or 5 participants are allowed")
+                          e.target.value=""
+                      }
+                    })
+                </script>
+          
+          
+          <button>Submit</button>
+        </form>
+
+    </div>
+
+
+    <style>
+      /* HERE: FORM */
+    form {
+      text-align: center;
+      font-family: "Open Sans", Helvetica;
+    }
+    label {
+      display: block;
+      letter-spacing: 4px;
+      padding-top: 30px;
+      text-align: center;
+    }
+    label .label-text {
+      color: #9b9b9b;
+      cursor: text;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      -moz-transform: translateY(-34px);
+      -ms-transform: translateY(-34px);
+      -webkit-transform: translateY(-34px);
+      transform: translateY(-34px);
+      transition: all 0.3s;
+    }
+    label input {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid #4a4a4a;
+      color: #2e2e2e;
+      font-size: 36px;
+      letter-spacing: -1px;
+      outline: 0;
+      padding: 5px 20px;
+      text-align: center;
+      transition: all 0.3s;
+      width: 200px;
+    }
+    label input:focus {
+      max-width: 100%;
+      width: 400px;
+    }
+    label input:focus + .label-text {
+      color: #2e2e2e;
+      font-size: 13px;
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    label input:valid + .label-text {
+      font-size: 13px;
+      -moz-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+      -webkit-transform: translateY(-100px);
+      transform: translateY(-100px);
+    }
+    button {
+      background-color: #333333;
+      border: 2px solid white;
+      border-radius: 27px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 20px;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      transition: all 200ms;
+    }
+    button:hover,
+    button:focus {
+      background-color: white;
+      color: #333333;
+      outline: 0;
+    }
+    </style>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<%- include("./partials/html-header")%>
+<body class="events-page">
+  <%- include("./partials/site-header")%>
+  <div
+    class="page-header"
+    style="background:url(./images/events-header-bg.jpg); background-position: center;"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="entry-header">
+            <h2 class="entry-title">Events</h2>
+            <ul class="breadcrumbs flex align-items-center"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="events-container">
+    <div class="card">
+      <div class="card__content">
+        <div
+          class="card__front"
+          style="background-image: url(./images/photos\ small/DSC_8971.JPG);"
+        >
+          <h3 class="card__title">Technical Events</h3>
+          <p class="card__subtitle">Click for more details</p>
+        </div>
+        <div class="card__back">
+          <ul class="card__body">
+            <li><a href="/event/registration#automaton">Automaton</a></li>
+            <li><a href="/event/registration#buddhi">"Buddhi" The Quiz</a></li>
+            <li><a href="/event/registration#madforcad">MAD for CAD</a></li>
+            <li><a href="/event/registration#brainmine">Brain Mine</a></li>
+            <li><a href="/event/registration#projectexpo">Project Expo</a></li>
+            <li><a href="/event/registration#pubg">PUBG</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__content">
+        <div
+          class="card__front"
+          style="background-image: url(./images/photos\ small/small\ 4.jpg);"
+        >
+          <h3 class="card__title">Non-Technical Events</h3>
+          <p class="card__subtitle">Click for more details</p>
+        </div>
+        <div class="card__back">
+          <ul class="card__body">
+            <li><a href="/event/registration">Auto Expo 2k19</a></li>
+            <li><a href="/event/registration#">Blossoms</a></li>
+            <li><a href="/event/registration#">Super Satoliya</a></li>
+            <li><a href="/event/registration#">Rang-The art GAllery</a></li>
+            <li><a href="/event/registration#fantasyipl">Fantasy IPL</a></li>
+            <li><a href="/event/registration#">Chess Competetion</a></li>
+            <li><a href="/event/registration#">Gully ke Champs 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__content">
+        <div
+          class="card__front"
+          style="background-image: url(./images/photos\ small/small\ 21.jpg);"
+        >
+          <h3 class="card__title">Cultural Events</h3>
+          <p class="card__subtitle">Click for more details</p>
+        </div>
+        <div class="card__back">
+          <ul class="card__body">
+            <li><a href="/event/registration#thirak">THIRAK</a></li>
+            <li><a href="/event/registration#sur">SUR</a></li>
+            <li><a href="/event/registration#kavyanjali">Kavyanjali</a></li>
+            <li><a href="/event/registration#rang">RANG</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__content">
+        <div
+          class="card__front"
+          style="background-image: url(./images/photos\ small/nukad.jpg);"
+        >
+          <h3 class="card__title">Literary Events</h3>
+          <p class="card__subtitle">Click for more details</p>
+        </div>
+        <div class="card__back">
+          <ul class="card__body">
+            <li><a href="/event/registration#nukkadnatak">Nukkad Natak</a></li>
+            <li><a href="/event/registration">Toggle</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__content">
+        <div
+          class="card__front"
+          style="background-image: url(./images/photos\ small/small\ 10.jpg);"
+        >
+          <h3 class="card__title">Social Events</h3>
+          <p class="card__subtitle">Click for more details</p>
+        </div>
+        <div class="card__back">
+          <ul class="card__body">
+            <li><a href="/event/registration#bhagirath">Bhagirath</a></li>
+            <li><a href="/event/registration">Health Checkup Camp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card__content">
+        <div
+          class="card__front"
+          style="background-image: url(./images/photos\ small/sports.jpg);"
+        >
+          <h3 class="card__title">Sports</h3>
+          <p class="card__subtitle">Click for more details</p>
+        </div>
+        <div class="card__back">
+          <ul class="card__body">
+            <li><a href="https://aaveg2019.wordpress.com/">AAVEG</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .title {
+      width: 400px;
+    }
+    .events-container {
+      margin: 100px 50px 100px 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    } /* HERE: Special rotation effect */
+    @import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+    :root {
+      --level-one: translateZ(3rem);
+      --level-two: translateZ(6rem);
+      --level-three: translateZ(9rem);
+      --fw-normal: 400;
+      --fw-bold: 700;
+      --clr: #b7c9e5;
+    }
+    .card {
+      width: 400px;
+      border: none;
+      margin: 50px 10px;
+    }
+    .card__content {
+      text-align: center;
+      position: relative;
+      padding: 15em 5em;
+      -webkit-transition: -webkit-transform 2s;
+      transition: -webkit-transform 2s;
+      -o-transition: transform 2s;
+      transition: transform 2s;
+      transition: transform 2s, -webkit-transform 2s;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+    }
+    .card:hover .card__content {
+      -webkit-transform: rotateY(0.5turn);
+      transform: rotateY(0.5turn);
+    }
+    .card:hover:nth-child(even) .card__content {
+      -webkit-transform: rotateY(-0.5turn);
+      transform: rotateY(-0.5turn);
+    }
+    .card__front,
+    .card__back {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 5em 3em;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      display: -ms-grid;
+      display: grid;
+      -ms-flex-line-pack: center;
+      align-content: center;
+    }
+    .card__front {
+      background-color: var(--clr);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      color: #333;
+    }
+    .card__front::before {
+      content: "";
+      position: absolute;
+      --spacer: 1em;
+      top: var(--spacer);
+      bottom: var(--spacer);
+      left: var(--spacer);
+      right: var(--spacer);
+      border: 3px solid currentColor;
+      -webkit-transform: var(--level-one);
+      -ms-transform: var(--level-one);
+      transform: var(--level-one);
+    }
+    .card__title {
+      font-size: 3.5rem;
+      -webkit-transform: var(--level-three);
+      -ms-transform: var(--level-three);
+      transform: var(--level-three);
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      text-transform: uppercase;
+    }
+    .card__subtitle {
+      -webkit-transform: var(--level-two);
+      -ms-transform: var(--level-two);
+      transform: var(--level-two);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 0.75rem;
+      font-weight: var(--fw-bold);
+      opacity: 0.7;
+    }
+    .card__body {
+      -webkit-transform: var(--level-two);
+      -ms-transform: var(--level-two);
+      transform: var(--level-two);
+      font-weight: var(fw-normal);
+      font-size: 1.5rem;
+      line-height: 1.6;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .card__body li {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .card__body li a {
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #333;
+      position: relative;
+    }
+    .card__body li a:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 0;
+      -webkit-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out;
+      border-bottom: 2px solid #2e2e2e;
+    }
+    .card__body li a:hover:after {
+      width: 100%;
+    }
+    .card__back {
+      -webkit-transform: rotateY(0.5turn);
+      transform: rotateY(0.5turn);
+      color: #333;
+      background: var(--clr);
+    }
+    @media (max-width: 500px) {
+      .card {
+        min-width: 300px;
+      }
+      .card__title {
+        font-size: 2.3rem;
+      }
+    } /* HERE: Special rotation effect */
+  </style>
+  <%- include("./partials/footer.ejs")%>
+</body>

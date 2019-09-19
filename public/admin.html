@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="admin.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <title>Pravah Admin Cell</title>
+    
+</head>
+<body>
+
+    <div class="container">
+        <!-- HERE: Side Menu -->
+        <div class="menu">
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#add_event">Add Event</a></li>
+                <li><a href="#all_events">All Events</a></li>
+                <li><a href="#all_registration">All Registration</a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+
+        <!-- HERE: Section contaoning all forms -->
+        <section>
+
+            <div id="dashboard" class="hero">
+                <h2>Dashboard</h2>
+                <table>
+                    <tr>
+                        <th>Total Hits on Website:</th>
+                        <td>4000</td>
+                    </tr>
+                    <tr>
+                        <th>Total Registered Events:</th>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <th>Total Online Registration:</th>
+                        <td>1000</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Add Event -->
+            <div class="hero" id="add_event">
+                <h2>Add Event</h2>
+                <div>
+                    <form action="">
+                        <label for="">Event Name: </label>
+                        <input type="text" name="matchname" required>
+                        <br>
+                        <label for="">Event CAtegory: </label>
+                        <select name="" id="">
+                            <option value="" selected="selected">Select Map</option>
+                            <option value="Technical">Technical</option>
+                            <option value="Non-Technical">Non-Technical</option>
+                        </select>
+                        <label for="">Mode: </label>
+                        <select name="" id="">
+                            <option value="Solo">Solo</option>
+                            <option value="Duo">Duo</option>
+                            <option value="Squad">Squad</option>
+                            <option value="Mix">Mix</option>
+                        </select>
+                        <label for="">Type:</label>
+                        <select name="" id="">
+                            <option value="Kill">Kill Base</option>
+                            <option value="Win">Win Base</option>
+                            <option value="Both">Kill & Win basis</option>
+                        </select>
+                        <br>
+                        <label for="">Match Date and Time</label>
+                        <input type="date">
+                        <input type="time">
+                        <br>
+                        <label for="">Registration Fees:</label>
+                        <input type="number">
+                        <label for="">Available Seats</label>
+                        <input type="range" min="0" max="100" step="1" onchange="updatesliderval(this.val)">
+                        <br>
+                        <label for="">Prize:</label> 
+                        <br>
+                        <textarea name="" id="" cols="50" rows="8"></textarea>
+                        <br>
+                        <label for="">Registration Open: </label>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        
+
+
+                        <button type="submit" class='ripple'> CREATE MATCH</button>
+                    </form>
+                </div>
+            </div>
+            <!-- HERE: End of Create match -->
+
+
+            <!-- HERE: All available events -->
+            <div class="hero" id="all_events">
+                <h2>All Events</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Event Type</th>
+                            <th>Registration</th>
+                            <th>Registration Status</th>
+                        </tr>
+                        <tr>
+                            <td>My event</td>
+                            <td>Pravah Event</td>
+                            <td>12</td>
+                            <td>
+                                <label class="switch">
+                                    <input type="checkbox" id="one" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            <!-- HERE: End of all available events -->
+
+            
+
+            <div class="hero" id="all_registration">
+                <h2>All Registration</h2>
+                <div>
+                    <div class="event_box">
+                            <table>
+                                <h3 class="table_name">Event Name</h3>
+
+                                <tr>
+                                    <th>Sr. No</th>
+                                    <th>Student Name</th>
+                                    <th>Registration date</th>
+                                    <th>Registration Status</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ayush</td>
+                                    <td>12 May 1990</td>
+                                    <td>Done</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ajay</td>
+                                    <td>12 May 1990</td>
+                                    <td>Done</td>
+                                </tr>
+            
+                            </table>
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="hero">
+                <h2></h2>
+                <div></div>
+            </div>
+
+        </section>
+    </div>
+
+
+</body>
+<script src="./js/index.js"></script>
+</html>

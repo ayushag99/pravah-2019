@@ -1,0 +1,32 @@
+<%- include("./partials/html-header")%>
+<body class="not-found">
+  <%- include("./partials/site-header")%>
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="entry-header">
+            <h2 class="entry-title">404 Page Not Found</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .not-found {
+      background: url("./images/not-found-background.jpeg") no-repeat;
+      background-size: cover;
+      background-position: center, center;
+      background-attachment: fixed;
+    }
+    .page-header {
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+      );
+      height: 100vh;
+    }</style
+  ><%- include("./partials/footer.ejs")%>
+</body>
